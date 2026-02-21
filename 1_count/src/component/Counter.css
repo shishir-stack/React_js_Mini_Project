@@ -1,0 +1,111 @@
+/* 1. The Main Background */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #050505; /* Pure dark background */
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* 2. The Card Styling */
+.counter-card {
+  background: #111111; /* Slightly lighter black */
+  padding: 3rem;
+  border-radius: 28px;
+  border: 1px solid #222; /* Subtle border for definition */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 320px;
+}
+
+/* 3. Title Text */
+.title {
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. The Large Number Display */
+.count-display {
+  font-size: 5rem;
+  margin: 1rem 0;
+  color: blue;
+  font-weight: 300;
+  /* Adds a subtle white glow to the number */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* 5. Button Container */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* 6. Button Base Styles */
+.btn {
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Increment Button (White/Silver) */
+.btn-increment {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Decrement Button (Dark Grey) */
+.btn-decrement {
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn-increment:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* 7. Reset Button Styling */
+.btn-reset {
+  background: transparent;
+  border: 1px solid #333;
+  color: #888;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-reset:hover {
+  background: #ff4d4d;
+  color: white;
+  border-color: #ff4d4d;
+}
